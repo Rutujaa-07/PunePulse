@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8f5;
+    color: #24352b;
+}
+
+header {
+    background: #174c37;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px 20px;
+}
+
+.intro {
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.intro h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.places h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#places-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.place-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.place-card h3 {
+    color: #174c37;
+    margin-bottom: 10px;
+}
+
+.place-card p {
+    line-height: 1.6;
+}
+
+.category {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 12px;
+    background: #e0f0e5;
+    color: #174c37;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: #174c37;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+}
