@@ -140,3 +140,31 @@ footer {
     min-width: 150px;
     background: white;
 }
+.data-sources {
+    background: #f1f7f2;
+    padding: 25px;
+    margin: 30px 20px;
+    border-radius: 12px;
+    border-left: 5px solid #2e8b57;
+}
+
+.data-sources h2 {
+    color: #246b45;
+    margin-bottom: 12px;
+}
+
+.data-sources p {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.data-sources a {
+    color: #246b45;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.data-sources a:hover {
+    text-decoration: underline;
+}
