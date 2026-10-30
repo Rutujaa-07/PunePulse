@@ -25,7 +25,9 @@ if (!config || !config.apiKey) {
                 const placeItems = [];
 
                 places.forEach(place => {
-                    const marker = new maplibregl.Marker()
+                    const marker = new maplibregl.Marker({
+                        color: place.category === "Heritage" ? "#e67e22" : "#2e8b57"
+                    })
                         .setLngLat([place.longitude, place.latitude])
                         .setPopup(
                             new maplibregl.Popup().setText(
