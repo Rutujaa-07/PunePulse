@@ -1,198 +1,72 @@
-# \# 🌿 PunePulse – Explore Pune's Heritage \& Green Spaces
+**🌿 PunePulse – Explore Pune's Heritage & Green Spaces**
 
-# 
+PunePulse is an interactive map-based web application that helps people explore Pune's historical landmarks and beautiful gardens.
 
-# PunePulse is an interactive map-based web application that helps people discover Pune's heritage landmarks and beautiful green spaces.
+**🚀 Live Demo**
 
-# 
+[Visit PunePulse](https://main.d20s5remqhtqjh.amplifyapp.com)
 
-# Explore places, search by name, and filter locations by category through an interactive map.
+**✨ Features**
+- Interactive map of Pune
+- Heritage and Garden locations
+- Orange and Green category markers
+- Search and category filters
+- Live places counter
+- Location information popups
+- Responsive design
 
-# 
+**🗺️ Locations**
 
-# \## 🚀 Live Demo
+| Place | Category |
+|---|---|
+| Shaniwar Wada | Heritage |
+| Aga Khan Palace | Heritage |
+| Saras Baug | Garden |
+| Pune Okayama Friendship Garden | Garden |
 
-# 
+*Coordinates are approximate and intended for exploration, not navigation.*
 
-# \[Visit PunePulse](https://main.d20s5remqhtqjh.amplifyapp.com)
+**☁️ AWS Services & Technologies**
+- Amazon Location Service – Map tiles and style
+- AWS Amplify – Application hosting
+- AWS Amplify Environment Variables – API key configuration
+- MapLibre GL JS – Interactive map
+- HTML, CSS and JavaScript – Frontend
 
-# 
+**📁 Project Structure**
 
-# \## ✨ Features
+```text
+PunePulse/
+├── index.html
+├── amplify.yml
+├── LICENSE
+├── README.md
+├── css/style.css
+├── data/places.json
+└── js/app.js
+```
 
-# 
+**💻 Run Locally**
 
-# \- Interactive map of Pune
+1. Clone: `git clone https://github.com/Rutujaa-07/PunePulse.git`
+2. Open: `cd PunePulse`
+3. Configure your local `js/config.js` with your API key.
+4. Run: `python -m http.server 8000`
+5. Visit: `http://localhost:8000`
 
-# \- Heritage and Garden locations
+**🔐 Security**
 
-# \- Category-based map markers
+Never upload your API key or `js/config.js` to GitHub. Production uses the `PUNEPULSE_API_KEY` environment variable in AWS Amplify.
 
-# \- Search places by name
+**📚 Data Sources**
+- Amazon Location Service – Standard Map Style
+- MapLibre GL JS – Map rendering
+- Curated Pune locations – `data/places.json`
 
-# \- Filter locations by category
+[Amazon Location Service Docs](https://docs.aws.amazon.com/location/latest/developerguide/) · [MapLibre](https://maplibre.org/)
 
-# \- Live results counter
+**📜 License:** MIT License
 
-# \- Place information popups
+**❤️ Built for Pune**
 
-# \- Responsive web interface
-
-# 
-
-# \## 🗺️ Locations Included
-
-# 
-
-# | Place | Category |
-
-# |---|---|
-
-# | Shaniwar Wada | Heritage |
-
-# | Aga Khan Palace | Heritage |
-
-# | Saras Baug | Garden |
-
-# | Pune Okayama Friendship Garden | Garden |
-
-# 
-
-# Coordinates are approximate and intended for exploration, not navigation.
-
-# 
-
-# \## ☁️ AWS Services \& Technologies
-
-# 
-
-# \- \*\*Amazon Location Service:\*\* Provides the map tiles and map style.
-
-# \- \*\*AWS Amplify Hosting:\*\* Hosts the live web application.
-
-# \- \*\*AWS Amplify Environment Variables:\*\* Supplies the map API key during the build.
-
-# \- \*\*MapLibre GL JS:\*\* Renders the interactive map.
-
-# \- \*\*HTML, CSS and JavaScript:\*\* Frontend development.
-
-# 
-
-# \## 📁 Project Structure
-
-# 
-
-# ```text
-
-# PunePulse/
-
-# ├── index.html
-
-# ├── amplify.yml
-
-# ├── LICENSE
-
-# ├── README.md
-
-# ├── css/
-
-# │   └── style.css
-
-# ├── data/
-
-# │   └── places.json
-
-# └── js/
-
-# &#x20;   └── app.js
-
-# ```
-
-# 
-
-# \## 💻 Run Locally
-
-# 
-
-# 1\. Clone the repository:
-
-# 
-
-# ```bash
-
-# git clone https://github.com/Rutujaa-07/PunePulse.git
-
-# ```
-
-# 
-
-# 2\. Open the project folder:
-
-# 
-
-# ```bash
-
-# cd PunePulse
-
-# ```
-
-# 
-
-# 3\. Configure your Amazon Location Service API key locally in `js/config.js` using the expected configuration format.
-
-# 
-
-# 4\. Start a local server:
-
-# 
-
-# ```bash
-
-# python -m http.server 8000
-
-# ```
-
-# 
-
-# 5\. Open `http://localhost:8000` in your browser.
-
-# 
-
-# \*\*Security note:\*\* Never commit your API key or `js/config.js` to GitHub. The production build uses the `PUNEPULSE\_API\_KEY` environment variable in AWS Amplify.
-
-# 
-
-# \## 📚 Data Sources \& Attribution
-
-# 
-
-# \- Map provider: Amazon Location Service – Standard Map Style.
-
-# \- Map rendering: MapLibre GL JS.
-
-# \- Place information and approximate coordinates: Curated local dataset in `data/places.json`.
-
-# 
-
-# \[Amazon Location Service Documentation](https://docs.aws.amazon.com/location/latest/developerguide/)
-
-# 
-
-# \[MapLibre Documentation](https://maplibre.org/)
-
-# 
-
-# \## 📜 License
-
-# 
-
-# This project is licensed under the MIT License.
-
-# 
-
-# \## ❤️ Built for Pune
-
-# 
-
-# PunePulse celebrates the heritage and green spaces of Pune through the power of cloud technology.
-
+Exploring Pune's heritage and green spaces with cloud technology.
