@@ -1,0 +1,11 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - 'test -n "$PUNEPULSE_API_KEY"'
+        - 'printf "%s\n" "window.PUNEPULSE_CONFIG = { apiKey: \"${PUNEPULSE_API_KEY}\", region: \"ap-south-1\" };" > js/config.js'
+  artifacts:
+    baseDirectory: .
+    files:
+      - "**/*"
